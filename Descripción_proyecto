@@ -1,0 +1,36 @@
+## Descripción del Proyecto
+Este repositorio contiene un notebook de Jupyter que implementa un modelo basado en LSTMs (Long Short-Term Memory) para predecir el precio de la energía en las próximas 12 horas. El trabajo es parte de un ejercicio puntuable con el objetivo de demostrar habilidades en el manejo de datos y la creación de modelos predictivos utilizando redes neuronales.
+
+### Objetivos del Proyecto
+Desarrollar un modelo LSTM para predecir el precio de la energía de las próximas 12 horas.
+Medir la bondad del modelo utilizando el error cuadrático medio (MSE) de las predicciones.
+Dividir el dataset en conjuntos de entrenamiento y validación según sea necesario.
+Evaluar el modelo utilizando un dataset de prueba específico (índices 9000 en adelante).
+
+### Contenido del Notebook
+Importación de Librerías: Se importan las librerías necesarias para el procesamiento de datos, la creación del modelo y la visualización.
+
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+from keras.models import Sequential
+from keras.layers import LSTM, Dense
+from keras.optimizers import Adam
+from keras.layers import Dropout
+import matplotlib.pyplot as plt
+
+### Carga de Datos: Se carga el dataset desde un archivo CSV.
+
+data = pd.read_csv('energy_price_2022.csv')
+Preprocesamiento de Datos: Incluye la normalización y preparación de los datos para el modelo LSTM.
+
+### Construcción del Modelo: Se crea y compila el modelo LSTM utilizando Keras.
+
+### Entrenamiento del Modelo: El modelo se entrena utilizando los datos preprocesados.
+
+### Evaluación del Modelo: Se evalúa el rendimiento del modelo utilizando el conjunto de prueba y se calcula el MSE.
+
+### Visualización de Resultados: Se generan gráficos para visualizar el rendimiento del modelo y las predicciones.
+
+## Conclusiones
+El notebook incluye conclusiones sobre el rendimiento del modelo y posibles mejoras.
